@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/help_cardview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        android:background="#ff6e42ff"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#5EADF2">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptos_description"
+            android:text="Felicidades tu puntaje esta entre los mejores, ingresa tu nombre, y luego mira en la lista de puntajes."
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/player_name_txt"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

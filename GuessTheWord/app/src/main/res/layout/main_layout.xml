@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4966C4">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        android:background="#ff6e42ff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/main"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/play_btn"
+                android:src="@mipmap/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:borderWidth="0dp"
+                android:layout_gravity="center_vertical"
+                android:onClick="play" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/help_btn"
+                android:src="@mipmap/ayuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:borderWidth="0dp"
+                android:layout_gravity="bottom|center_vertical"
+                android:onClick="help" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/winner_btn"
+                android:src="@mipmap/trofeo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:borderWidth="0dp"
+                android:layout_gravity="bottom|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:onClick="showScore" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/description"
+                android:src="@mipmap/acercade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:borderWidth="0dp"
+                android:layout_gravity="bottom|center_vertical" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/main_title1"
+            android:textColor="#FFFFFF"
+            android:textSize="47dp"
+            android:textStyle="bold"
+            android:gravity="top|center_horizontal"
+            android:layout_marginTop="70dp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/main_title2"
+            android:textColor="#FFFFFF"
+            android:textSize="47dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/main_title3"
+            android:textColor="#FFFFFF"
+            android:textSize="47dp"
+            android:textStyle="bold"
+            android:gravity="bottom|center_horizontal"
+            android:layout_marginBottom="70dp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

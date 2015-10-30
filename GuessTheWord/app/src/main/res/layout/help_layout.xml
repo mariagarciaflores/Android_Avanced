@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4966C4">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/help_cardview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        android:background="#ff6e42ff"
+        android:layout_weight="1">
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="370dp"
+                android:src="@drawable/main2"
+                android:scaleType="centerCrop"
+                android:id="@+id/image4"
+                android:layout_weight="1" >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/help_description"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#5EADF2"
+                android:elegantTextHeight="false"
+                android:padding="20dp" />
+        </LinearLayout>
+    </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:weightSum="3"
+    android:background="#4966C4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/puntaje_txt"
+        android:background="#4966C4"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:id="@+id/images_layout"
+            android:weightSum="2"
+            android:background="#5EADF2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/first_vertical_layout"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_image1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="10dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:background="#ff6e42ff"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sepia1"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/image1" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_image2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="10dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:background="#ff6e42ff"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sepia1"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/image2" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/second_vertical_layout">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_image3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="10dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:background="#ff6e42ff"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sepia1"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/image3" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_image4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="10dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:background="#ff6e42ff"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sepia1"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/image4" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:id="@+id/letters_insert_layout"
+            android:background="#ffffffff">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="?android:dividerVertical"
+                        android:dividerPadding="6dp"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView"
+                            android:background="#046DC9"
+                            android:layout_weight="2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:id="@+id/insert_word_txt"
+                            android:textSize="20dp"
+                            android:textColor="#FFFFFF"
+                            android:background="#046DC9"
+                            android:foreground="@color/color_primary"
+                            android:editable="false"
+                            android:ems="10"
+                            android:textAlignment="center"
+                            android:textStyle="bold|italic"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ok"
+                            android:id="@+id/ok_btn"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="2"
+                            android:onClick="goToNextLevel"
+                            android:textColor="#ff010101" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/pista.txt"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="15dp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#ff1f6a35"
+                        android:text="Pista : La palabra contiene " />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/firstFileLetters"
+                        android:measureWithLargestChild="false"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:baselineAligned="false"
+                        android:backgroundTint="#ff2bdbff"
+                        android:visibility="visible"
+                        android:showDividers="beginning|none">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:id="@+id/button1"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:id="@+id/button2"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:id="@+id/button3"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D"
+                            android:id="@+id/button4"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/secondFileLetters"
+                        android:measureWithLargestChild="false"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:id="@+id/button5"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:id="@+id/button6"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:id="@+id/button7"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D"
+                            android:id="@+id/button8"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101"
+                            android:visibility="visible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/thirdFileLetters"
+                        android:measureWithLargestChild="false"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:id="@+id/button9"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:id="@+id/button10"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:id="@+id/button11"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_weight="1"
+                            android:onClick="insertLetter"
+                            android:textColor="#ff010101" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/buttonRemove"
+                            android:layout_weight="2"
+                            android:onClick="removeLetter"
+                            android:src="@drawable/remove"
+                            style="?android:borderlessButtonStyle"
+                             />
+
+                    </TableRow>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+</LinearLayout>
